@@ -1,0 +1,748 @@
+/* reset */
+
+body {
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+dl,
+dt,
+dd {
+    margin: 0;
+    padding: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a img {
+    border: none;
+}
+
+li {
+    list-style: none;
+}
+
+address,
+em,
+i {
+    font-style: normal;
+}
+
+table {
+    border-collapse: collapse;
+}
+/* line 112, /Users/logan/Desktop/easy forms/passafe/css/style_invoice.scss */
+.body {
+    color: #000;
+    font-size: 18px;
+    background: #fff;
+    overflow: auto;
+    min-width: 935px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box; }
+
+/* line 123, /Users/logan/Desktop/easy forms/passafe/css/style_invoice.scss */
+.wrapper_left {
+    font-size: 14px;
+    width: 170px;
+    float: left;
+    padding: 10px;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box; }
+/* line 129, /Users/logan/Desktop/easy forms/passafe/css/style_invoice.scss */
+.wrapper_left .side_sh {
+    margin: 20px 0px 16px;
+    position: relative;
+    width: 100%; }
+/* line 132, /Users/logan/Desktop/easy forms/passafe/css/style_invoice.scss */
+.wrapper_left .side_sh .y_search {
+
+    width: 62px;
+    height: 35px;
+    padding: 0 8px;
+    margin: 0;
+    border: 1px solid #B7550B;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box; }
+.wrapper_left .side_sh .tag {
+    color: #ccc;
+    font-size: 14px;
+    position: absolute;
+    top:-20px;
+    left: 0;
+    width: 50px;
+    height: 20px;
+    padding-left: 4px;
+
+}
+
+.wrapper_left .side_sh input + .tag {
+    position: absolute;
+    top:-20px;
+    left: 62px;
+    width: 50px;
+    height: 20px;
+
+
+}
+
+.wrapper_left .side_sh .m_search {
+    position: relative;
+
+    width: 45px;
+    height: 35px;
+    padding: 0 8px;
+    margin: 0;
+    border: 1px solid #B7550B;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box; }
+/* line 140, /Users/logan/Desktop/easy forms/passafe/css/style_invoice.scss */
+.wrapper_left .side_sh .iv_btn {
+    width: 35px;
+    float: right;
+    height: 35px;
+    background: #E68A47;
+    background-image: url(../img/ic_search_48px.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25px;
+    text-indent: -9999px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 13px;
+    padding: 0;
+    margin: 0;
+    text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
+    border: 1px solid #B7550B;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box; }
+/* line 155, /Users/logan/Desktop/easy forms/passafe/css/style_invoice.scss */
+
+.wrapper_left .print_btn {
+    display: block;
+    position: relative;
+    width: 0px;
+    height: 0px;
+    font-size: 0px;
+    font-weight: 500;
+    color: #fff;
+    background: #26bca4;
+    border: 0px solid #26a3a4;
+    margin: 0 auto;
+    padding: 0;
+    background-image: url(../img/ic_file_download_w.png);
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: 203px 6px;
+    border-radius: 15px;
+    text-indent: -15px;
+    text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.wrapper_left .print_btn.on {
+    display: block;
+    width: 250px;
+    height: 30px;
+    border: 1px solid #26a3a4;
+    margin: 10px auto 10px;
+    font-size: 17px;
+}
+
+@keyframes downani {
+    0% {
+        background-position: 180px 9px; }
+    50% {
+        background-position: 180px 8px; }
+    100% {
+        background-position: 180px 10px; } }
+
+/* line 197, /Users/logan/Desktop/easy forms/passafe/css/style_invoice.scss */
+
+.iv_list {
+    border: 1px solid #B7550B;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+/* line 201, /Users/logan/Desktop/easy forms/passafe/css/style.scss */
+
+.iv_list > li {
+    background: #E68A47;
+    display: block;
+    height: auto;
+    font-size: 15px;
+    overflow: hidden;
+    color: #fff;
+    position: relative;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    padding: 0px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* line 214, /Users/logan/Desktop/easy forms/passafe/css/style.scss */
+
+.iv_list > li.on {
+    display: block;
+    height: auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+/* line 220, /Users/logan/Desktop/easy forms/passafe/css/style.scss */
+
+.iv_list > li.on.auto_h {
+    height: auto;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+/* line 225, /Users/logan/Desktop/easy forms/passafe/css/style.scss */
+
+.iv_list > li > a {
+    text-align: center;
+    display: block;
+    width: 100%;
+    text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
+    line-height: 50px;
+    padding: 0 16px;
+    box-sizing: border-box;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+/* line 232, /Users/logan/Desktop/easy forms/passafe/css/style.scss */
+
+.iv_list > li > a.on {
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    font-size: 15px;
+    color: #B7550B;
+    text-shadow: none;
+}
+
+.iv_list > li > a:hover {
+    font-size: 15px;
+    color: #B7550B;
+    text-shadow: none;
+}
+
+/* line 235, /Users/logan/Desktop/easy forms/passafe/css/style.scss */
+
+.iv_list > li > a.on:before {
+    content: "> ";
+    font-size: 10px;
+    vertical-align: top;
+}
+
+/* line 244, /Users/logan/Desktop/easy forms/passafe/css/style.scss */
+
+.iv_list > li + li {
+    border-top: 0px;
+}
+
+/* line 246, /Users/logan/Desktop/easy forms/passafe/css/style.scss */
+
+.iv_list > li + li:before {
+    content: " ";
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 95%;
+    height: 1px;
+    border-top: 1px solid #B7550B;
+    z-index: 11;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+/* line 260, /Users/logan/Desktop/easy forms/passafe/css/style.scss */
+
+.iv_list > li:hover {
+    /*font-size: 16px;*/
+}
+
+/* line 270, /Users/logan/Desktop/easy forms/passafe/css/style.scss */
+
+.iv_main_item ul {
+    display: block;
+}
+
+/* line 272, /Users/logan/Desktop/easy forms/passafe/css/style.scss */
+
+.iv_main_item ul.on {
+    display: block;
+}
+
+.iv_main_item ul li a {
+    display: block;
+    position: relative;
+    width: 100%;
+    padding: 0 16px 0 24px;
+    height: 0px;
+    background: #f5f5f5;
+    /*line-height: 50px;*/
+    color: #666;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.iv_main_item ul.on li a {
+    padding: 20px 16px 20px 24px;
+    height: auto;
+    /*line-height: 50px;*/
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.iv_main_item ul li + li a:before {
+    content: " ";
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 95%;
+    height: 1px;
+    border-top: 1px solid #fff;
+    z-index: 11;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+
+/* line 339, /Users/logan/Desktop/easy forms/passafe/css/style_invoice.scss */
+.wrapper_right {
+    float: left;
+    width: calc(100% - 170px);
+    padding: 16px;
+    min-width: 750px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box; }
+/* line 348, /Users/logan/Desktop/easy forms/passafe/css/style_invoice.scss */
+.wrapper_right .header {
+    position: relative;
+    margin-bottom: 20px; }
+/* line 352, /Users/logan/Desktop/easy forms/passafe/css/style_invoice.scss */
+.wrapper_right .header .header_list {
+    width: 100%;
+    position: relative;
+    overflow: hidden; }
+/* line 358, /Users/logan/Desktop/easy forms/passafe/css/style_invoice.scss */
+.wrapper_right .header .header_list .hd_li {
+    padding: 10px 0 10px;
+    font-size: 19px;
+    overflow: hidden;
+    border-bottom: 2px solid #E68A47; }
+/* line 365, /Users/logan/Desktop/easy forms/passafe/css/style_invoice.scss */
+.wrapper_right .header .header_list .hd_li li {
+    float: left;
+    margin-bottom: 4px; }
+/* line 368, /Users/logan/Desktop/easy forms/passafe/css/style_invoice.scss */
+.wrapper_right .header .header_list .hd_li li span {
+    font-weight: bolder; }
+/* line 375, /Users/logan/Desktop/easy forms/passafe/css/style_invoice.scss */
+.wrapper_right .header .header_list .hd_li li p {
+    display: block;
+    color: #666; }
+/* line 382, /Users/logan/Desktop/easy forms/passafe/css/style_invoice.scss */
+.wrapper_right .header .header_list .hd_li li:last-child {
+    padding-top: 16px;
+    text-align: left;
+    padding-left: 20px;
+    line-height: 20px;
+    font-size: 15px; }
+/* line 389, /Users/logan/Desktop/easy forms/passafe/css/style_invoice.scss */
+.wrapper_right .header .header_list .hd_li li h1 {
+    width: 300px;
+    height: 75px;
+    background: url(../img/passafelogo.png) left top no-repeat;
+    background-size: contain;
+    text-indent: -9999px; }
+/* line 401, /Users/logan/Desktop/easy forms/passafe/css/style_invoice.scss */
+.wrapper_right .header > p {
+    font-size: 15px;
+    font-weight: 600;
+    color: #666;
+    display: inline-block;
+    margin-bottom: 8px; }
+/* line 407, /Users/logan/Desktop/easy forms/passafe/css/style_invoice.scss */
+.wrapper_right .header > p:after {
+    content: ":"; }
+/* line 413, /Users/logan/Desktop/easy forms/passafe/css/style_invoice.scss */
+.wrapper_right .header:after {
+    content: " ";
+    display: block;
+    clear: both; }
+/* line 419, /Users/logan/Desktop/easy forms/passafe/css/style_invoice.scss */
+.wrapper_right .header .hd_d {
+    padding: 0px 16px 5px;
+    overflow: hidden; }
+/* line 423, /Users/logan/Desktop/easy forms/passafe/css/style_invoice.scss */
+.wrapper_right .header .hd_d li {
+    float: left;
+    font-size: 15px;
+    color: #888; }
+/* line 427, /Users/logan/Desktop/easy forms/passafe/css/style_invoice.scss */
+.wrapper_right .header .hd_d li h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #E68A47;
+    margin-bottom: 4px}
+/* line 433, /Users/logan/Desktop/easy forms/passafe/css/style_invoice.scss */
+.wrapper_right .header .hd_d li p {
+    line-height: 22px; }
+/* line 436, /Users/logan/Desktop/easy forms/passafe/css/style_invoice.scss */
+.wrapper_right .header .hd_d li.billed_to {
+    display: block;
+    padding-top: 70px;
+    width: 30%; }
+/* line 441, /Users/logan/Desktop/easy forms/passafe/css/style_invoice.scss */
+.wrapper_right .header .hd_d li.detail {
+    display: block;
+    padding-top: 70px;
+    width: 30%; }
+/* line 446, /Users/logan/Desktop/easy forms/passafe/css/style_invoice.scss */
+.wrapper_right .header .hd_d li.total_top {
+    text-align: right;
+    display: block;
+    width: 40%; }
+/* line 451, /Users/logan/Desktop/easy forms/passafe/css/style_invoice.scss */
+.wrapper_right .header .hd_d li.total_top h2 {
+    font-size: 70px;
+    color: #E68A47; }
+/* line 455, /Users/logan/Desktop/easy forms/passafe/css/style_invoice.scss */
+.wrapper_right .header .hd_d li.total_top p {
+    margin-bottom: 5px;
+    padding-right: 8px; }
+/* line 459, /Users/logan/Desktop/easy forms/passafe/css/style_invoice.scss */
+.wrapper_right .header .hd_d li.total_top p:last-child {
+    font-size: 40px;
+    font-weight: 400;
+    color: #26bca4; }
+/* line 472, /Users/logan/Desktop/easy forms/passafe/css/style_invoice.scss */
+.wrapper_right .main h3 {
+    font-size: 17px;
+    font-weight: 600;
+    color: #666;
+    margin-bottom: 8px; }
+/* line 477, /Users/logan/Desktop/easy forms/passafe/css/style_invoice.scss */
+.wrapper_right .main h3 span {
+    margin-left: 4px; }
+/* line 481, /Users/logan/Desktop/easy forms/passafe/css/style_invoice.scss */
+.wrapper_right .main .list_item {
+    overflow: hidden;
+    margin-bottom: 20px; }
+/* line 486, /Users/logan/Desktop/easy forms/passafe/css/style_invoice.scss */
+.wrapper_right .main .list_item .board_box {
+    width: 100%; }
+/* line 488, /Users/logan/Desktop/easy forms/passafe/css/style_invoice.scss */
+.wrapper_right .main .list_item .board_box .board_title {
+    display: block;
+    background: -webkit-linear-gradient(90deg, #e25e24 0%, #E68A47 100%);
+    background: -moz-linear-gradient(90deg, #e25e24 0%, #E68A47 100%);
+    background: -o-linear-gradient(90deg, #e25e24 0%, #E68A47 100%);
+    background: -ms-linear-gradient(90deg, #e25e24 0%, #E68A47 100%);
+    background: linear-gradient(90deg, #e25e24 0%, #E68A47 100%);
+    color: #fff;
+    width: 100%;
+    padding: 10px 0;
+    overflow: hidden; }
+/* line 500, /Users/logan/Desktop/easy forms/passafe/css/style_invoice.scss */
+.wrapper_right .main .list_item .board_box .board_title .co {
+    float: left;
+    font-size: 13px;
+    text-align: center; }
+/* line 504, /Users/logan/Desktop/easy forms/passafe/css/style_invoice.scss */
+.wrapper_right .main .list_item .board_box .board_title .co:first-child {
+    width: 5%; }
+/* line 507, /Users/logan/Desktop/easy forms/passafe/css/style_invoice.scss */
+.wrapper_right .main .list_item .board_box .board_title .co:nth-child(2) {
+    width: 10%; }
+/* line 510, /Users/logan/Desktop/easy forms/passafe/css/style_invoice.scss */
+.wrapper_right .main .list_item .board_box .board_title .co:nth-child(3) {
+    width: 15%; }
+/* line 513, /Users/logan/Desktop/easy forms/passafe/css/style_invoice.scss */
+.wrapper_right .main .list_item .board_box .board_title .co:nth-child(4) {
+    width: 25%; }
+/* line 516, /Users/logan/Desktop/easy forms/passafe/css/style_invoice.scss */
+.wrapper_right .main .list_item .board_box .board_title .co:nth-child(5) {
+    width: 15%; }
+/* line 519, /Users/logan/Desktop/easy forms/passafe/css/style_invoice.scss */
+.wrapper_right .main .list_item .board_box .board_title .co:nth-child(6) {
+    width: 7%; }
+/* line 522, /Users/logan/Desktop/easy forms/passafe/css/style_invoice.scss */
+.wrapper_right .main .list_item .board_box .board_title .co:nth-child(7) {
+    width: 8%; }
+/* line 525, /Users/logan/Desktop/easy forms/passafe/css/style_invoice.scss */
+.wrapper_right .main .list_item .board_box .board_title .co:nth-child(8) {
+    width: 15%; }
+/* line 530, /Users/logan/Desktop/easy forms/passafe/css/style_invoice.scss */
+.wrapper_right .main .list_item .board_box .board_list {
+    display: block;
+    background: #fff;
+    width: 100%;
+    padding: 10px 0;
+    overflow: hidden; }
+/* line 537, /Users/logan/Desktop/easy forms/passafe/css/style_invoice.scss */
+.wrapper_right .main .list_item .board_box .board_list .co {
+    float: left;
+    font-size: 13px;
+    text-align: center;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    word-break: break-all; }
+/* line 544, /Users/logan/Desktop/easy forms/passafe/css/style_invoice.scss */
+.wrapper_right .main .list_item .board_box .board_list .co:first-child {
+    width: 5%; }
+/* line 547, /Users/logan/Desktop/easy forms/passafe/css/style_invoice.scss */
+.wrapper_right .main .list_item .board_box .board_list .co:nth-child(2) {
+    width: 10%; }
+/* line 550, /Users/logan/Desktop/easy forms/passafe/css/style_invoice.scss */
+.wrapper_right .main .list_item .board_box .board_list .co:nth-child(3) {
+    width: 15%; }
+/* line 553, /Users/logan/Desktop/easy forms/passafe/css/style_invoice.scss */
+.wrapper_right .main .list_item .board_box .board_list .co:nth-child(4) {
+    width: 25%; }
+/* line 556, /Users/logan/Desktop/easy forms/passafe/css/style_invoice.scss */
+.wrapper_right .main .list_item .board_box .board_list .co:nth-child(5) {
+    width: 15%; }
+/* line 559, /Users/logan/Desktop/easy forms/passafe/css/style_invoice.scss */
+.wrapper_right .main .list_item .board_box .board_list .co:nth-child(6) {
+    width: 7%; }
+/* line 562, /Users/logan/Desktop/easy forms/passafe/css/style_invoice.scss */
+.wrapper_right .main .list_item .board_box .board_list .co:nth-child(7) {
+    width: 8%; }
+/* line 565, /Users/logan/Desktop/easy forms/passafe/css/style_invoice.scss */
+.wrapper_right .main .list_item .board_box .board_list .co:nth-child(8) {
+    width: 15%; }
+/* line 569, /Users/logan/Desktop/easy forms/passafe/css/style_invoice.scss */
+.wrapper_right .main .list_item .board_box .board_list .co b {
+    font-size: 13px;
+    font-weight: normal; }
+/* line 579, /Users/logan/Desktop/easy forms/passafe/css/style_invoice.scss */
+.wrapper_right .main .list_item .board_box .board_list:nth-child(n+2) .ro .co:nth-child(-n+3) {
+    visibility: hidden; }
+/* line 586, /Users/logan/Desktop/easy forms/passafe/css/style_invoice.scss */
+.wrapper_right .main .list_item .board_box .board_list:nth-child(odd) {
+    background: #f5f5f5; }
+/* line 589, /Users/logan/Desktop/easy forms/passafe/css/style_invoice.scss */
+.wrapper_right .main .list_item .board_box .board_list:last-child {
+    border-bottom: 2px solid #ccc; }
+/* line 599, /Users/logan/Desktop/easy forms/passafe/css/style_invoice.scss */
+.wrapper_right .total_box {
+    display: block;
+    overflow: hidden;
+    width: 30%;
+    float: right;
+    box-sizing: border-box;
+    font-size: 15px;
+    color: #444;
+    margin-top: 10px; }
+/* line 609, /Users/logan/Desktop/easy forms/passafe/css/style_invoice.scss */
+.wrapper_right .total_box .total_list {
+    display: block;
+    width: 100%;
+    box-sizing: border-box; }
+/* line 614, /Users/logan/Desktop/easy forms/passafe/css/style_invoice.scss */
+.wrapper_right .total_box .total_list .t_ro {
+    text-align: center;
+    box-sizing: border-box; }
+/* line 618, /Users/logan/Desktop/easy forms/passafe/css/style_invoice.scss */
+.wrapper_right .total_box .total_list .t_ro .t_co {
+    display: inline-block;
+    box-sizing: border-box; }
+/* line 621, /Users/logan/Desktop/easy forms/passafe/css/style_invoice.scss */
+.wrapper_right .total_box .total_list .t_ro .t_co:first-child {
+    width: 50%;
+    box-sizing: border-box;
+    text-align: right; }
+/* line 625, /Users/logan/Desktop/easy forms/passafe/css/style_invoice.scss */
+.wrapper_right .total_box .total_list .t_ro .t_co:first-child:after {
+    content: " :"; }
+/* line 630, /Users/logan/Desktop/easy forms/passafe/css/style_invoice.scss */
+.wrapper_right .total_box .total_list .t_ro .t_co:nth-child(2) {
+    width: 50%;
+    box-sizing: border-box;
+    font-weight: 500; }
+/* line 638, /Users/logan/Desktop/easy forms/passafe/css/style_invoice.scss */
+.wrapper_right .total_box .total_list.due {
+    font-size: 18px;
+    border-top: 2px solid #E68A47; }
+/* line 641, /Users/logan/Desktop/easy forms/passafe/css/style_invoice.scss */
+.wrapper_right .total_box .total_list.due .t_co {
+    font-weight: 600; }
+/* line 644, /Users/logan/Desktop/easy forms/passafe/css/style_invoice.scss */
+.wrapper_right .total_box .total_list.due .t_co:nth-child(2) {
+    width: 50%;
+    box-sizing: border-box;
+    font-weight: 500; }
+/* line 649, /Users/logan/Desktop/easy forms/passafe/css/style_invoice.scss */
+.wrapper_right .total_box .total_list.due .t_co:nth-child(2).total_bot {
+    font-weight: 600;
+    font-size: 24px;
+    color: #26bca4; }
+/* line 659, /Users/logan/Desktop/easy forms/passafe/css/style_invoice.scss */
+.wrapper_right .total_box .total_list.total {
+    margin-bottom: 8px; }
+/* line 666, /Users/logan/Desktop/easy forms/passafe/css/style_invoice.scss */
+.wrapper_right .note_box {
+    width: 60%;
+    float: left;
+    padding: 20px 0; }
+/* line 670, /Users/logan/Desktop/easy forms/passafe/css/style_invoice.scss */
+.wrapper_right .note_box .note {
+    width: 80%;
+    padding: 20px;
+    min-height: 100px; }
+/* line 674, /Users/logan/Desktop/easy forms/passafe/css/style_invoice.scss */
+.wrapper_right .note_box .note h4 {
+    color: #555;
+    font-size: 16px; }
+/* line 678, /Users/logan/Desktop/easy forms/passafe/css/style_invoice.scss */
+.wrapper_right .note_box .note p {
+    color: #666;
+    font-size: 15px; }
+
+/* line 688, /Users/logan/Desktop/easy forms/passafe/css/style_invoice.scss */
+footer .contact {
+    background: -webkit-linear-gradient(90deg, #e25e24 0%, #E68A47 100%);
+    background: -moz-linear-gradient(90deg, #e25e24 0%, #E68A47 100%);
+    background: -o-linear-gradient(90deg, #e25e24 0%, #E68A47 100%);
+    background: -ms-linear-gradient(90deg, #e25e24 0%, #E68A47 100%);
+    background: linear-gradient(90deg, #e25e24 0%, #E68A47 100%);
+    padding: 10px 10px; }
+
+/* line 697, /Users/logan/Desktop/easy forms/passafe/css/style_invoice.scss */
+footer h6 {
+    font-size: 14px;
+    color: #fff; }
+
+/* line 702, /Users/logan/Desktop/easy forms/passafe/css/style_invoice.scss */
+footer h5 {
+    color: #E68A47;
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding-bottom: 8px; }
+
+/* line 711, /Users/logan/Desktop/easy forms/passafe/css/style_invoice.scss */
+footer ul {
+    overflow: hidden;
+    display: flex; }
+/* line 714, /Users/logan/Desktop/easy forms/passafe/css/style_invoice.scss */
+footer ul li {
+    flex: 1;
+    display: inline-block;
+    float: left;
+    font-size: 14px;
+    color: #fff; }
+/* line 721, /Users/logan/Desktop/easy forms/passafe/css/style_invoice.scss */
+footer ul li:last-child {
+    flex: 2; }
+
+/* line 730, /Users/logan/Desktop/easy forms/passafe/css/style_invoice.scss */
+footer p:after {
+    content: ":";
+    margin-right: 4px;
+    display: inline-block;
+    width: 100px;
+    padding-top: 10px;
+    background: url(../img/fpa.jpg) no-repeat;
+    background-size: contain; }
+
+/*# sourceMappingURL=style_invoice.css.map */

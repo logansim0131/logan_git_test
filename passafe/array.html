@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+    <script 
+    type="text/javascript" src="./js/jquery-3.3.1.min.js">
+    </script>
+    <script>
+        var imgArray = [
+                'logan1.jpg',
+                'logan2.jpg',
+                'logan3.jpg'
+            ],
+
+            imgArrLength = imgArray.length,
+            i = 0;
+        console.log(imgArray);
+        for (i = 0; i < imgArrLength; i++) {
+            console.log(i);
+            $('<img />').attr({
+                    'src': 'img/' + imgArray[i],
+                    'id': 'img' + i
+                }).on("load", function() {
+                    $('.gall').append($(this));
+                 console.log(this);
+                });
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Array. it's easy</h1>
+    <div class="gall"></div>
+
+
+</body>
+
+</html>

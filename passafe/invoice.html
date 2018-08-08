@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="En">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 minimum-scale=1.0" />
+    <meta name="keywords" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="author" content="passafe" />
+    <meta name="apple-mobile-web-app-title" content="passafe" />
+    <meta name="description" content="Kpassafe" />
+    <meta name="robots" content="index,follow" />
+    <link rel="stylesheet" type="text/css" href="./css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="./css/invoice.css" />
+    <script type="text/javascript" src="./js/common.js"></script>
+
+
+    <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="./js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="./js/iscroll.js"></script>
+    <script type="text/javascript" src="./js/jquery.register_form.js"></script>
+    <script type="text/javascript" src="./js/bluebird.min.js"></script>
+    <script type="text/javascript" src="./js/jspdf.min.js"></script>
+    <script type="text/javascript" src="./js/html2canvas.min.js"></script>
+
+
+    <script type="text/javascript" src="./js/html2print.js"></script>
+
+
+    <title>passafe</title>
+
+</head>
+
+<body>
+    <div class="body">
+        <div class="wrapper_left">
+            <form>
+                <div class="side_sh">
+                   <label class="tag" for="year_sh">year</label>
+                    <input type="number" min="1999" max="2018" name="" value="" id="year_sh" class="y_search" title="invoice search" maxlength="30" onchange="on_text(this)" />
+                    <label class="tag" for="monthly_sh">month</label>
+                    <input type="number" min="1" max="12" name="" value="" id="monthly_sh" class="m_search" title="invoice search" maxlength="30" onchange="on_text(this)" />
+                    <button id="sh_submit" class="iv_btn">search</button>
+                    <button id="print_btn" class="print_btn" onclick="printpage()" type="button" value="print">Page print</button>
+                </div>
+            </form>
+
+
+            <div class="side">
+               <div>
+                   <span>August</span>
+                   <span>2018</span>
+                   
+               </div>
+                <ul class="iv_list">
+                    <li class="iv_main_item">
+                        <a href="#" class="">January</a>
+                        <ul>
+                            <li><a href="#" tabindex="-1">1111111</a></li>
+                            <li><a href="#" tabindex="-1">2222222</a></li>
+                            <li><a href="#" tabindex="-1">3333333</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="iv_main_item">
+                        <a href="#">February</a>
+                        <ul>
+                            <li><a href="#" tabindex="-1">1111111</a></li>
+                            <li><a href="#" tabindex="-1">2222222</a></li>
+                            <li><a href="#" tabindex="-1">3333333</a></li>
+
+                        </ul>
+                    </li>
+
+                    <li class="iv_main_item"><a href="#">March</a>
+                        <ul>
+                            <li><a href="#" tabindex="-1">1111111</a></li>
+                            <li><a href="#" tabindex="-1">2222222</a></li>
+                            <li><a href="#" tabindex="-1">3333333</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="iv_main_item"><a href="#">Aprill</a>
+                        <ul>
+                            <li><a href="#" tabindex="-1">1111111</a></li>
+                            <li><a href="#" tabindex="-1">2222222</a></li>
+                            <li><a href="#" tabindex="-1">3333333</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="iv_main_item"><a href="#">May</a>
+                        <ul>
+                            <li><a href="#" tabindex="-1">1111111</a></li>
+                            <li><a href="#" tabindex="-1">2222222</a></li>
+                            <li><a href="#" tabindex="-1">3333333</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="iv_main_item"><a href="#">June</a>
+                        <ul>
+                            <li><a href="#" tabindex="-1">1111111</a></li>
+                            <li><a href="#" tabindex="-1">2222222</a></li>
+                            <li><a href="#" tabindex="-1">3333333</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="iv_main_item"><a href="#">July</a>
+                        <ul>
+                            <li><a href="#" tabindex="-1">1111111</a></li>
+                            <li><a href="#" tabindex="-1">2222222</a></li>
+                            <li><a href="#" tabindex="-1">3333333</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="iv_main_item"><a href="#">August</a>
+                        <ul>
+                            <li><a href="#" tabindex="-1">1111111</a></li>
+                            <li><a href="#" tabindex="-1">2222222</a></li>
+                            <li><a href="#" tabindex="-1">3333333</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="iv_main_item"><a href="#">September</a>
+                        <ul>
+                            <li><a href="#" tabindex="-1">1111111</a></li>
+                            <li><a href="#" tabindex="-1">2222222</a></li>
+                            <li><a href="#" tabindex="-1">3333333</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="iv_main_item"><a href="#">October</a>
+                        <ul>
+                            <li><a href="#" tabindex="-1">1111111</a></li>
+                            <li><a href="#" tabindex="-1">2222222</a></li>
+                            <li><a href="#" tabindex="-1">3333333</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="iv_main_item"><a href="#">November</a>
+                        <ul>
+                            <li><a href="#" tabindex="-1">1111111</a></li>
+                            <li><a href="#" tabindex="-1">2222222</a></li>
+                            <li><a href="#" tabindex="-1">3333333</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="iv_main_item"><a href="#">December</a>
+                        <ul>
+                            <li><a href="#" tabindex="-1">1111111</a></li>
+                            <li><a href="#" tabindex="-1">2222222</a></li>
+                            <li><a href="#" tabindex="-1">3333333</a></li>
+
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="wrapper_right" id="print_area">
+            <div class="header">
+                <div class="header_list">
+
+
+                    <ul class="hd_li">
+                        <li>
+                            <h1>passafe</h1>
+
+
+                        </li>
+                        <li>
+                            <p>0800 727 723</p>
+                            <p>PO Box 21563, Henderson Auckland 0612</p>
+                            <p>info@passafe.nz</p>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="hd_d">
+                        <li class="billed_to">
+
+                            <h3>For</h3>
+
+                            <p>Client Name</p>
+                            <p>Client Address Client Address </p>
+                            <p>Client Info</p>
+
+
+                        </li>
+
+                        <li class="detail">
+
+                            <h3>Detail</h3>
+                            <p><span>Client Name</span><span> Monthly Invoices</span></p>
+                            <p><span>August</span><span> 2018</span></p>
+                            <p><span> 1st ~ 31th</span></p>
+
+
+                        </li>
+                        <li class="total_top">
+                            <h2>INVOICE</h2>
+
+                            <p>Invoice Total</p>
+                            <p>$5000</p>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+            </div>
+            <div class="side_nav">
+                <ul>
+                    <li>
+
+                    </li>
+                </ul>
+            </div>
+            <div class="main">
+                <h3>Invoices<span>August</span><span> 2017</span></h3>
+
+                <div class="list_item">
+                    <div class="list_daily top">
+                        <ul class="board_box title">
+
+                            <li class="board_title">
+                                <div class="ro">
+                                    <span class="co">N0.</span>
+                                    <span class="co">Invoice number</span>
+                                    <span class="co">Invoice Date</span>
+                                    <span class="co">Description</span>
+                                    <span class="co">Item</span>
+                                    <span class="co">Quantity</span>
+                                    <span class="co">Price</span>
+                                    <span class="co">Amount</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="list_daily mid">
+                        <ul class="board_box daily_list">
+                            <li class="board_list line">
+                                <div class="ro">
+                                    <span class="co">1</span>
+                                    <span class="co">123456</span>
+                                    <span class="co">05-Aug-2018</span>
+                                    <span class="co">Insulated non-combustible pipes</span>
+                                    <span class="co">non-combustible pipes</span>
+                                    <span class="co">5</span>
+                                    <span class="co">$100</span>
+                                    <span class="co">$500</span>
+                                </div>
+                            </li>
+                            <li class="board_list line">
+                                <div class="ro">
+                                    <span class="co">1</span>
+                                    <span class="co">123456</span>
+                                    <span class="co">05-Aug-2018</span>
+                                    <span class="co">Insulated non-combustible pipes</span>
+                                    <span class="co">non-combustible pipes</span>
+                                    <span class="co">5</span>
+                                    <span class="co">$100</span>
+                                    <span class="co">$500</span>
+                                </div>
+                            </li>
+                            <li class="board_list line">
+                                <div class="ro">
+                                    <span class="co">1</span>
+                                    <span class="co">123456</span>
+                                    <span class="co">05-Aug-2018</span>
+                                    <span class="co">Insulated non-combustible pipes</span>
+                                    <span class="co">non-combustible pipes</span>
+                                    <span class="co">5</span>
+                                    <span class="co">$100</span>
+                                    <span class="co">$500</span>
+                                </div>
+                            </li>
+                            <li class="board_list line">
+                                <div class="ro">
+                                    <span class="co">1</span>
+                                    <span class="co">123456</span>
+                                    <span class="co">05-Aug-2018</span>
+                                    <span class="co">Insulated non-combustible pipes</span>
+                                    <span class="co">non-combustible pipes</span>
+                                    <span class="co">5</span>
+                                    <span class="co">$100</span>
+                                    <span class="co">$500</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="board_box daily_list">
+                            <li class="board_list line">
+                                <div class="ro">
+                                    <span class="co">2</span>
+                                    <span class="co">234567</span>
+                                    <span class="co">05-Aug-2018</span>
+                                    <span class="co">Insulated non-combustible pipes</span>
+                                    <span class="co">non-combustible pipes</span>
+                                    <span class="co">5</span>
+                                    <span class="co">$100</span>
+                                    <span class="co">$500</span>
+                                </div>
+                            </li>
+                            <li class="board_list line">
+                                <div class="ro">
+                                    <span class="co">1</span>
+                                    <span class="co">234567</span>
+                                    <span class="co">01-Aug-2018</span>
+                                    <span class="co">Insulated non-combustible pipes</span>
+                                    <span class="co">non-combustible pipes</span>
+                                    <span class="co">5</span>
+                                    <span class="co">$100</span>
+                                    <span class="co">$500</span>
+                                </div>
+                            </li>
+                            <li class="board_list line">
+                                <div class="ro">
+                                    <span class="co">1</span>
+                                    <span class="co">234567</span>
+                                    <span class="co">05-Aug-2018</span>
+                                    <span class="co">Insulated non-combustible pipes</span>
+                                    <span class="co">non-combustible pipes</span>
+                                    <span class="co">5</span>
+                                    <span class="co">$100</span>
+                                    <span class="co">$500</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="board_box daily_list">
+                            <li class="board_list line">
+                                <div class="ro">
+                                    <span class="co">3</span>
+                                    <span class="co">345678</span>
+                                    <span class="co">15-Aug-2018</span>
+                                    <span class="co">Insulated non-combustible pipes</span>
+                                    <span class="co">non-combustible pipes</span>
+                                    <span class="co">5</span>
+                                    <span class="co">$100</span>
+                                    <span class="co">$500</span>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+
+
+                    <div class="list_daily bottom">
+
+
+
+
+                        <ul class="total_box">
+                            <li class="total_list subtotal">
+                                <div class="t_ro">
+                                    <span class="t_co">SUBTOTAL</span><span class="t_co">$5000</span>
+                                </div>
+
+                            </li>
+                            <li class="total_list gst">
+                                <div class="t_ro">
+                                    <span class="t_co"><b>GST</b><b>(0%)</b></span><span class="t_co">$0</span>
+                                </div>
+
+                            </li>
+                            <li class="total_list total">
+                                <div class="t_ro">
+                                    <span class="t_co">TOTAL</span><span class="t_co">$5000</span>
+                                </div>
+
+                            </li>
+
+                            <li class="total_list due">
+                                <div class="t_ro">
+                                    <span class="t_co">TOTAL DUE</span><span class="t_co total_bot">$5000</span>
+                                </div>
+
+                            </li>
+
+
+
+                        </ul>
+                        <div class="note_box">
+                            <div class="note">
+                                <h4>Notes</h4>
+                                <p>notes notes notes notes notes notes notes notes notes notes notes notes notes notes notes notes notes notes notes notes notes notes notes notes notes notes </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+            <footer>
+                <h5>Thanks for your business!</h5>
+                <div>
+                    <div class="contact">
+                        <h6>Passafe Contact Details</h6>
+                        <ul>
+
+                            <li>Tel: 0800 727 723</li>
+                            <li>Fax: 0800 727 724</li>
+                            <li>Adrress: PO Box 21563, Henderson Auckland 0612</li>
+
+
+                        </ul>
+
+
+                    </div>
+
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script>
+        'use strict';
+
+
+
+        //---side nav start---
+
+        //open menu
+//        $('.iv_list > li > a').on('click', function() {
+//            console.log("open sub_menu")
+//            $(this).toggleClass('on');
+//            $(this).parent().addClass('auto_h');
+//            $(this).next().toggleClass('on');
+//            $('.iv_list > li').addClass('on');
+//
+//        });
+
+        //        //if you want to close menu
+        //        $(document).on('click', '###', function() {
+        //            $('.scrbar > li').removeClass('on');
+        //            $('.iv_main_item ul').removeClass('on');
+        //            $('.scrbar > li').removeClass('auto_h');
+        //        });
+
+
+
+        $(".side").on("click", ".iv_list > li > a", function() {
+//            $(".iv_list").children('li').children('a, ul').removeClass('on');
+//            $(".iv_list").children().children('ul').empty();
+//            let asd = $(".sh_list").children('li').children('a, ul')
+//            console.log('asd', asd)
+            // $(".sh_sub_item").removeClass('on');
+//            $(".sh_sub_item a").removeClass('on');
+            $(this).toggleClass('on');
+            $(this).parent().toggleClass('auto_h');
+            $(this).next().toggleClass('on');
+//            const projectId = $(this).attr('data-id')
+//            console.log('ooo', this)
+//            loadFloorlist(projectId);
+//            console.log('projectId', projectId)
+        });
+
+
+        //floor 눌렀을 때
+        $(".iv_list").on("click", ".iv_main_item ul li a", function() {
+            $('.print_btn').addClass('on').attr({
+                'tabIndex': 0
+            });
+           
+        });
+
+
+        //---side nav end---
+
+
+        //input on change       
+        function on_text(obj) {
+            obj.style.backgroundColor = 'yellow';
+        }
+    </script>
+</body>
+
+</html>

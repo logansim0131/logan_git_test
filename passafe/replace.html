@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+  div { border:2px solid blue; color:red; margin:3px; }
+  p { border:2px solid red; color:blue; margin:3px; cursor:pointer; }
+  </style>
+  <script src="http://code.jquery.com/jquery-1.7rc2.js"></script>
+</head>
+<body>
+  
+  <p>Hello</p>
+  <p>cruel</p>
+  <p>World</p>
+
+  <div>Replaced!</div>
+
+<script>
+$("p").click(function () {
+  $(this).replaceWith( $("div") );
+});
+</script>
+
+</body>
+</html>
